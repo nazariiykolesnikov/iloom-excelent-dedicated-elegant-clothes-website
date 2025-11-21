@@ -10,9 +10,9 @@ import {
     products_mini_t_shirts_part_1
 } from "../../assets/data/products-mini.js";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs.jsx";
+import ProductList from "./ProductList/ProductList.jsx";
 import Navbar from "../../components/Navbar/Navbar.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
-import ProductList from "./ProductList/ProductList.jsx";
 
 const breadcrumbs = [
     { id: 1, link: "Главная" },
