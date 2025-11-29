@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.sales-order-gifts-wrapping__container {
+    position: relative;
+    width: 100%;
+    height: 599px;
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.sales-order-gifts-wrapping__gift-wrapping-image {
+    position: absolute;
+    left: 180px;
+    bottom: -62px;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+    object-fit: contain;
+}
+
+.sales-order-gifts-wrapping__gift-wrapping-messages {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 648px;
+    height: 168px;
+}
+
+.gift-wrapping-messages__header {
+    position: absolute;
+    top: 180px;
+    left: 590px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+}
+
+.gift-wrapping-messages__subheader {
+    position: absolute;
+    top: 190px;
+    left: 590px;
+    width: 100%;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.gift-wrapping-messages__button {
+    position: absolute;
+    left: 590px;
+    top: 350px;
+    width: 176px;
+    height: 48px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 19px;
+    border-radius: 25px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    padding: 8px 16px;
+    transition: background 0.3s ease;
+}
+
+.gift-wrapping-messages__button:hover {
+    background: #ef5ebf;
+    opacity: 1;
+}
+

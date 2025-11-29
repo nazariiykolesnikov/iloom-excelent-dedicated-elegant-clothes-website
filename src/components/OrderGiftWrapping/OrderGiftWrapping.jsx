@@ -1,5 +1,4 @@
-import order_gift_wrapping from '../../../assets/images/banner/Order_gift_wrapping/order_gift_wrapping.png';
-import i_look_gift_wrapping from '../../../assets/images/banner/Order_gift_wrapping/i_look_gift_wrapping.png';
+import { salesOrderGiftsImages } from "../../assets/data/sales-order-gifts-images.js";
 import "./OrderGiftWrapping.css";
 
 const OrderGiftWrapping = () => {
@@ -8,19 +7,19 @@ const OrderGiftWrapping = () => {
             <section
                 className="i_look_order_gift_wrapping relative w-full h-[469px] mt-[75px] flex items-center justify-center"
                 style={{
-                    backgroundImage: `url(${order_gift_wrapping})`,
+                    backgroundImage: `url(${salesOrderGiftsImages.sales_order_gift_wrapping})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
             >
                 <img
-                    src={i_look_gift_wrapping}
+                    src={salesOrderGiftsImages.i_look_gift_wrapping}
                     alt="Подарочная упаковка I LOOM"
                     className="i_look_gift_wrapping absolute left-[-59px] bottom-[-330px] w-[879.375px] h-[833.2px] object-contain"
                 />
                 <div className="absolute top-[10px] left-[10px] w-[648px] h-[168px]">
                     <h2
-                        className="i_look_gift_wrapping__heading text-left text-[#ffffff] 
+                        className="i_look_gift_wrapping__heading text-left text-[#ffffff]
                             font-[800] montserrat"
                     >
                         Закажи подарочную<br/>упаковку

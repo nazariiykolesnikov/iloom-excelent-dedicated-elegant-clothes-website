@@ -1,9 +1,39 @@
 export const productsData = [
-    { id: 1, name: 'Футболка с принтом "Tommys Sandwiches"', price: '3 823 ₽', image: "https://i.ibb.co/S4SbRQLm/tommys-sandwiches-t-shirt-01.webp", alt: "tommys_sandwiches_t_shirt" },
-    { id: 2, name: 'Худи оверсайз с вышивкой "Карпы Кои"', price: '13 215 ₽', image: 'https://i.ibb.co/qLcBtnZB/13231232133131.webp', alt: "oversize_skinny_with_carp_koi_embroidery" },
-    { id: 3, name: 'Футболка оверсайз с принтом "Just Kiss Me"', price: '3 823 ₽', image: 'https://i.ibb.co/YFckr2gY/oversize-t-shirt-with-just-kiss-me-print-01.webp', alt: "oversize_t_shirt_with_just_kiss_me_print" },
-    { id: 4, name: 'Футболка с принтом "Bonjour"', price: '3 690 ₽', image: 'https://i.ibb.co/9H67XwQC/bonjour-print-t-shirt-01.webp', alt: "bonjour_print_t_shirt" },
-    { id: 5, name: 'Худи оверсайз с вышивкой "Любовь"', price: '5 138 ₽', image: 'https://i.ibb.co/DHhJLNBj/oversized-hoodie-with-love-embroidery-01.webp', alt: "oversized-hoodie-with-love-embroider" },
+    {
+        id: 1,
+        name: 'Футболка с принтом "Tommys Sandwiches"',
+        price: '3 823 ₽',
+        image: "https://i.ibb.co/S4SbRQLm/tommys-sandwiches-t-shirt-01.webp",
+        alt: "tommys_sandwiches_t_shirt"
+    },
+    {
+        id: 2,
+        name: 'Худи оверсайз с вышивкой "Карпы Кои"',
+        price: '13 215 ₽',
+        image: 'https://i.ibb.co/qLcBtnZB/13231232133131.webp',
+        alt: "oversize_skinny_with_carp_koi_embroidery"
+    },
+    {
+        id: 3,
+        name: 'Футболка оверсайз с принтом "Just Kiss Me"',
+        price: '3 823 ₽',
+        image: 'https://i.ibb.co/YFckr2gY/oversize-t-shirt-with-just-kiss-me-print-01.webp',
+        alt: "oversize_t_shirt_with_just_kiss_me_print"
+    },
+    {
+        id: 4,
+        name: 'Футболка с принтом "Bonjour"',
+        price: '3 690 ₽',
+        image: 'https://i.ibb.co/9H67XwQC/bonjour-print-t-shirt-01.webp',
+        alt: "bonjour_print_t_shirt"
+    },
+    {
+        id: 5,
+        name: 'Худи оверсайз с вышивкой "Любовь"',
+        price: '5 138 ₽',
+        image: 'https://i.ibb.co/DHhJLNBj/oversized-hoodie-with-love-embroidery-01.webp',
+        alt: "oversized-hoodie-with-love-embroider"
+    },
     { id: 6, name: 'Футболка оверсайз с вышивкой "Я руковожу этим цирком"', price: '3 336 ₽', image: 'https://i.ibb.co/cSFDp25t/oversize-t-shirt-with-embroidery-i-run-this-circus-01.webp', alt: "oversize_t_shirt_with_embroidery_i_run_this_circus" },
     { id: 7, name: 'Футболка с принтом "Best Friends"', price: '3 823 ₽', image: 'https://i.ibb.co/k2M6s6WM/t-shirt-with-best-friends-print-01.webp', alt: "t_shirt_with_best_friends_print" },
     { id: 8, name: 'Футболка оверсайз с принтом "Не ной SYKA"', price: '3 823 ₽', image: 'https://i.ibb.co/vxpXKDr2/Oversize-t-shirt-with-dont-whine-syka-print-01.webp', alt: "oversize_t_shirt_with_dont_whine_syka_print" },

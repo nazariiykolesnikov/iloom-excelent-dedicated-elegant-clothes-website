@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { assets } from "../../../assets/data/assets.js";
-import { products } from "../../../assets/data/products.js";
+import { assets } from "../../assets/data/assets.js";
+import { products } from "../../assets/data/products.js";
 import "./BestsellersSlider.css";
 
 const BestsellersSlider = () => {

@@ -2,17 +2,23 @@ import { useState } from "react";
 import './ProductPage.css';
 import { assets } from "../../assets/data/assets.js";
 import { review_images } from "../../assets/data/reviews_images.js";
-const product_preview_image = "https://i.ibb.co/JwCr4bbQ/blue-hoodie-with-honk-embroidery-01.webp";
 import { product_page_mini_images } from "../../assets/data/product-page_mini-images.js";
 import {
-    products_mini_hoodies_part1,
-    products_mini_sweatshirts_part1,
-    products_mini_t_shirts_part_1
+    products_mini_hoodies_p1,
+    products_mini_hoodies_p2,
+    products_mini_hoodies_p3,
+    products_mini_t_shirts_p1,
+    products_mini_t_shirts_p2,
+    products_mini_t_shirts_p3,
+    products_mini_sweatshirts_p1,
+    products_mini_sweatshirts_p2
 } from "../../assets/data/products-mini.js";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs.jsx";
 import ProductList from "./ProductList/ProductList.jsx";
 import Navbar from "../../components/Navbar/Navbar.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
+import ProductCounterButton from "../../components/ProductCounterButton/ProductCounterButton.jsx";
+import ProductAddToCartButton from "../../components/ProductAddToCartButton/ProductAddToCartButton.jsx";
 
 const breadcrumbs = [
     { id: 1, link: "Главная" },
@@ -22,8 +28,19 @@ const breadcrumbs = [
     { id: 5, link: "Джинсы" }
 ];
 
+const productListOptions = [
+    products_mini_hoodies_p1,
+    products_mini_hoodies_p2,
+    products_mini_hoodies_p3,
+    products_mini_t_shirts_p1,
+    products_mini_t_shirts_p2,
+    products_mini_t_shirts_p3,
+    products_mini_sweatshirts_p1,
+    products_mini_sweatshirts_p2
+];
+
 const ProductPage = () => {
-    const [mainImage, setMainImage] = useState(product_preview_image);
+    const [mainImage, setMainImage] = useState(review_images.product_preview_image);
     const [activeImageId, setActiveImageId] = useState(1);
 
     const handleImageClick = (id, src) => {
@@ -79,38 +96,71 @@ const ProductPage = () => {
                                     </div>
                                     <div className="product-meta__wrapper">
                                         <div className="product-meta">
-                                            <span className="product-reviews">2 отзыва</span>
+                                            <span className="product-reviews">
+                                                2 отзыва
+                                            </span>
                                             <div className="product-icons">
-                                                <img className="product-add-to-favorites" id="product-add-to-favorites__heart-icon" src={assets.fi_heart}
-                                                     alt="Добавить в избранное"/>
-                                                <img className="product-add-to-favorites" id="product-add-to-favorites__share-icon" src={assets.share_alt_outlined}
-                                                     alt="Поделиться"/>
+                                                <img
+                                                    className="product-add-to-favorites"
+                                                    id="product-add-to-favorites__heart-icon"
+                                                    src={assets.fi_heart}
+                                                    alt="Добавить в избранное"
+                                                />
+                                                <img
+                                                    className="product-add-to-favorites"
+                                                    id="product-add-to-favorites__share-icon"
+                                                    src={assets.share_alt_outlined}
+                                                    alt="Поделиться"
+                                                />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="product-price-reviews">
-                                    <span className="product-price">25.000 ₸</span>
+                                    <span className="product-price">
+                                        25.000 ₸
+                                    </span>
                                 </div>
                                 <div className="product-color">
-                                    <span className="product-color__text" id="product-color__text-1">
+                                    <span
+                                        className="product-color__text"
+                                        id="product-color__text-1"
+                                    >
                                         Цвет:
                                     </span>
                                     <div className="product-color__color-palette">
                                         <button className="product-color__color-palette--button">
-                                            <a className="product-color__color-palette--button-link" href="#">&nbsp;</a>
+                                            <a
+                                                className="product-color__color-palette--button-link"
+                                                href="#"
+                                            >
+                                                &nbsp;
+                                            </a>
                                         </button>
                                     </div>
                                 </div>
                                 <p className="product-color">
-                                    <span className="product-color__text" id="product-color__text-2">
+                                    <span
+                                        className="product-color__text"
+                                        id="product-color__text-2"
+                                    >
                                         Размер:
                                     </span>
                                     <button className="product-size__btn">
-                                        <a className="product-size__btn-link" href="#">One Size</a>
+                                        <a
+                                            className="product-size__btn-link"
+                                            href="#"
+                                        >
+                                            One Size
+                                        </a>
                                     </button>
                                 </p>
-                                <a className="size-guide" href="#">Параметры размера</a>
+                                <a
+                                    className="size-guide"
+                                    href="#"
+                                >
+                                    Параметры размера
+                                </a>
                                 <div className="delivery-services__container">
                                     <div className="delivery-services__wrapper">
                                         <div className="delivery-services__case">
@@ -121,7 +171,9 @@ const ProductPage = () => {
                                             />
                                             <p className="delivery-services__courier-case--text">
                                                 Курьером до двери - от
-                                                <span className="delivery-services__case--text-color">
+                                                <span
+                                                    className="delivery-services__case--text-color"
+                                                >
                                                     &nbsp;50 000 ₸&nbsp;
                                                 </span>
                                                 бесплатно
@@ -135,7 +187,9 @@ const ProductPage = () => {
                                             />
                                             <p className="delivery-services__sdek-case--text">
                                                 Доставка до пункта выдачи Сдэк - от<br/>
-                                                <span className="delivery-services__sdek-case--text-color">
+                                                <span
+                                                    className="delivery-services__sdek-case--text-color"
+                                                >
                                                     30 000 ₸&nbsp;
                                                 </span>
                                                 бесплатно
@@ -145,36 +199,8 @@ const ProductPage = () => {
                                 </div>
                                 <div className="product-quantity__wrapper">
                                     <div className="product-quantity">
-                                        <button
-                                            className="product-quantity__button"
-                                            aria-label="Уменьшить количество"
-                                        >
-                                            −
-                                        </button>
-                                        <span>
-                                            1
-                                        </span>
-                                        <button
-                                            className="product-quantity__button"
-                                            aria-label="Увеличить количество"
-                                        >
-                                            +
-                                        </button>
-                                    </div>
-                                    <div className="product-card-addition">
-                                        <button
-                                            aria-label="Добавить товар в корзину"
-                                            className="product-card-addition__button"
-                                        >
-                                            <img
-                                                className="product-card-addition__button-image"
-                                                src={assets.add_to_card_icon}
-                                                alt="Иконка корзины"
-                                            />
-                                            <span className="product-card-addition__text">
-                                                В корзину
-                                            </span>
-                                        </button>
+                                        <ProductCounterButton />
+                                        <ProductAddToCartButton />
                                     </div>
                                 </div>
                             </article>
@@ -361,9 +387,9 @@ const ProductPage = () => {
                     </div>
                 </section>
                 <section>
-                    <ProductList products={products_mini_hoodies_part1} />
-                    <ProductList products={products_mini_t_shirts_part_1} />
-                    <ProductList products={products_mini_sweatshirts_part1} />
+                    {productListOptions.map((product) => (
+                        <ProductList products={product}/>
+                    ))}
                 </section>
             </section>
             <Footer/>

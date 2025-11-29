@@ -1,55 +1,10 @@
-import { useState } from "react";
-import star_filled_black from "../../assets/logo/StarFilledBlack/star.svg";
-const product_preview_image = "https://i.ibb.co/JwCr4bbQ/blue-hoodie-with-honk-embroidery-01.webp";
-import fi_heart from "../../assets/logo/FiHeart/heart-svgrepo-com.svg";
-import share_alt_outlined from "../../assets/logo/ShareAltOutlined/share-svgrepo-com.svg";
-import add_to_card_icon from "../../assets/logo/AddToCard/shape.svg";
-import eye_icon from "../../assets/logo/Eye/eye.svg";
-const oversize_blue_hoodie_with_non_brushed_piping_01 = "https://i.ibb.co/GvGYCB41/oversize-blue-hoodie-with-non-brushed-piping-01.webp"
-const oversize_blue_hoodie_with_non_brushed_piping_02 = "https://i.ibb.co/dJV9s0Mr/oversize-blue-hoodie-with-non-brushed-piping-02.webp"
-const oversize_blue_hoodie_with_non_brushed_piping_03 = "https://i.ibb.co/35LgFtbL/oversize-blue-hoodie-with-non-brushed-piping-03.webp"
-const oversize_blue_hoodie_with_non_brushed_piping_04 = "https://i.ibb.co/Gfjtr6q1/oversize-blue-hoodie-with-non-brushed-piping-04.webp"
-const oversize_blue_hoodie_with_non_brushed_piping_05 = "https://i.ibb.co/4gpnqHN4/oversize-blue-hoodie-with-non-brushed-piping-05.webp"
 import './PopUpProductPreview.css';
-import Navbar from "../../components/Navbar/Navbar.jsx";
-import Footer from "../../components/Footer/Footer.jsx";
-
-// eslint-disable-next-line react-refresh/only-export-components
-export const product_mini_images = [
-    {
-        id: 1,
-        src: oversize_blue_hoodie_with_non_brushed_piping_01,
-        alt: "product_mini_image_1",
-        className: "product-mini-image",
-    },
-    {
-        id: 2,
-        src: oversize_blue_hoodie_with_non_brushed_piping_02,
-        alt: "product_mini_image_2",
-        className: "product-mini-image",
-    },
-    {
-        id: 3,
-        src: oversize_blue_hoodie_with_non_brushed_piping_03,
-        alt: "product_mini_image_3",
-        className: "product-mini-image",
-    },
-    {
-        id: 4,
-        src: oversize_blue_hoodie_with_non_brushed_piping_04,
-        alt: "product_mini_image_4",
-        className: "product-mini-image",
-    },
-    {
-        id: 5,
-        src: oversize_blue_hoodie_with_non_brushed_piping_05,
-        alt: "product_mini_image_5",
-        className: "product-mini-image",
-    }
-];
+import { assets } from "../../assets/data/assets.js";
+import { popUpProductPreviewImages } from "../../assets/data/pop-up-product-preview-images.js";
+import { useState } from "react";
 
 const PopUpProductPreview = () => {
-    const [mainImage, setMainImage] = useState(product_preview_image);
+    const [mainImage, setMainImage] = useState(popUpProductPreviewImages.product_preview_image);
     const [activeImageId, setActiveImageId] = useState(1);
 
     const handleImageClick = (id, src) => {
@@ -59,114 +14,114 @@ const PopUpProductPreview = () => {
 
     return (
         <>
-            <Navbar/>
-            <section className="product-container">
-                <figure className="product-image">
-                    <img
-                        className="product-preview-image"
-                        src={mainImage}
-                        alt="Чорне плаття в горошок"
-                    />
-                </figure>
-                <article className="product-card">
-                    <div className="product-rating">
-                        {[...Array(5)].map((_, i) => (
-                            <img
-                                key={i}
-                                src={star_filled_black}
-                                alt="Оценка: звезда"
-                                className="product-rating__star"
-                            />
-                        ))}
+            <div className="pop-up-product-preview__container">
+                <div className="pop-up-product-preview__wrapper">
+                    <div className="pop-up-product-preview__main-image--container">
+                        <img
+                            className="pop-up-product-preview__main-image"
+                            src={mainImage}
+                            alt="Чорне плаття в горошок"
+                        />
                     </div>
-                    <h2 className="product-title">
-                        Чёрное платье в крупный горошек с вырезом "каре" и широкими рукавами
-                    </h2>
-                    <div className="product-price-reviews">
-                        <span className="product-price">79.99 BYN</span>
-                    </div>
-                    <p className="product-description">
-                        Красивое женское платье А-образного силуэта из ткани поплин. Вырез в форме каре, короткие
-                        расширенные рукава собраны на резинку. Пояс на талии акцентирует внимание на женственность
-                        фигуры.
-                        Нижний ярус платья – широкая рюша с волнообразной сборкой. Рекомендуем для легких летних
-                        образов!
-                    </p>
-                    <p className="product-color">
-                        <strong>Цвет:</strong>&nbsp;&nbsp;Чёрно-белый горошек
-                    </p>
-                    <div className="product-mini-images">
-                        {product_mini_images.map(({id, src, alt, className}) => (
-                            <img
-                                key={id}
-                                className={`${className} ${activeImageId === id ? "active-mini-image" : ""}`}
-                                src={src}
-                                alt={alt}
-                                onClick={() => handleImageClick(id, src)}
-                                style={{cursor: "pointer"}}
-                            />
-                        ))}
-                    </div>
-                    <div className="product-sizes">
-                        <p>Размер:</p>
-                        <div className="product-size-buttons">
-                            {["XS", "S", "M", "L", "XL"].map((size) => (
-                                <button className="product-size-button" key={size}>
-                                    {size}
-                                </button>
+                    <div className="pop-up-product-preview__product-card">
+                        <div className="pop-up-product-preview__product-rating">
+                            {[...Array(5)].map((_, i) => (
+                                <img
+                                    key={i}
+                                    src={assets.star_filled_black}
+                                    alt="Оценка: звезда"
+                                    className="pop-up-product-preview__product-rating-star"
+                                />
                             ))}
                         </div>
-                        <a href="#" className="size-guide">
-                            Подобрать размер
-                        </a>
-                    </div>
-                    <div style={{display: "flex", flexDirection: "row", gap: "1.4rem"}}>
-                        <div className="product-quantity">
-                            <button style={{borderRadius: "50%"}} aria-label="Уменьшить количество">−</button>
-                            <span>1</span>
-                            <button style={{borderRadius: "50%"}} aria-label="Увеличить количество">+</button>
+                        <h2 className="pop-up-product-preview__product-title">
+                            Чёрное платье в крупный горошек с вырезом "каре" и широкими рукавами
+                        </h2>
+                        <div className="pop-up-product-preview__product-price-reviews">
+                            <span className="pop-up-product-preview__product-price">79.99 BYN</span>
                         </div>
-                        <div className="product-card-addition">
-                            <button
-                                aria-label="Добавить товар в корзину"
-                                className="product-card-addition__button"
-                            >
+                        <p className="pop-up-product-preview__product-description">
+                            Красивое женское платье А-образного силуэта из ткани поплин. Вырез в форме каре, короткие
+                            расширенные рукава собраны на резинку. Пояс на талии акцентирует внимание на женственность
+                            фигуры.
+                            Нижний ярус платья – широкая рюша с волнообразной сборкой. Рекомендуем для легких летних
+                            образов!
+                        </p>
+                        <p className="pop-up-product-preview__product-color">
+                            <strong>Цвет:</strong>&nbsp;&nbsp;Чёрно-белый горошек
+                        </p>
+                        <div className="pop-up-product-preview__product-mini-images">
+                            { popUpProductPreviewImages.map(({id, src, alt, className}) => (
                                 <img
-                                    className="product-card-addition__button-image"
-                                    src={add_to_card_icon}
-                                    alt="Иконка корзины"
+                                    key={id}
+                                    className={`${className} ${activeImageId === id ? "active-mini-image" : ""}`}
+                                    src={src}
+                                    alt={alt}
+                                    onClick={() => handleImageClick(id, src)}
+                                    style={{cursor: "pointer"}}
                                 />
-                                <span className="product-card-addition__text">В корзину</span>
-                            </button>
+                            ))}
+                        </div>
+                        <div className="pop-up-product-preview__product-sizes">
+                            <p>Размер:</p>
+                            <div className="pop-up-product-preview__product-size-buttons">
+                                {["XS", "S", "M", "L", "XL"].map((size) => (
+                                    <button className="pop-up-product-preview__product-size-button" key={size}>
+                                        {size}
+                                    </button>
+                                ))}
+                            </div>
+                            <a href="#" className="pop-up-product-preview__size-guide">
+                                Подобрать размер
+                            </a>
+                        </div>
+                        <div className="pop-up-product-preview__product-quantity--container" style={{display: "flex", flexDirection: "row", gap: "1.4rem"}}>
+                            <div className="pop-up-product-preview__product-quantity">
+                                <button className="product-quantity minus" style={{borderRadius: "50%"}} aria-label="Уменьшить количество">−</button>
+                                <span className="product-quantity__counter">1</span>
+                                <button className="product-quantity plus" style={{borderRadius: "50%"}} aria-label="Увеличить количество">+</button>
+                            </div>
+                            <div className="pop-up-product-preview__add-to-basket">
+                                <button
+                                    aria-label="Добавить товар в корзину"
+                                    className="add-to-basket__button"
+                                >
+                                    <img
+                                        className="add-to-basket__button-icon"
+                                        src={assets.add_to_card_icon}
+                                        alt="Иконка корзины"
+                                    />
+                                    <span className="add-to-basket__button-text">В корзину</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="pop-up-product-preview__watch-description">
+                                <button
+                                    aria-label="Смотреть полное описание"
+                                    className="pop-up-product-preview__watch-description-button"
+                                >
+                                    <img
+                                        className="watch-description__button-icon"
+                                        src={assets.eye}
+                                        alt="Иконка глаза"
+                                    />
+                                    <span className="watch-description__button-text">Смотреть полное описание</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <div className="product-watch-description">
-                            <button
-                                aria-label="Смотреть полное описание"
-                                className="product-watch-description__button"
-                            >
-                                <img
-                                    className="product-watch-description__button-image"
-                                    src={eye_icon}
-                                    alt="Иконка глаза"
-                                />
-                                <span className="product-watch-description__text">Смотреть полное описание</span>
-                            </button>
+                    <div className="pop-up-product-preview__share-and-favorites">
+                        <div className="pop-up-product-preview__share-and-favorites--wrapper">
+                            <span className="pop-up-product-preview__product-reviews">2 отзыва</span>
+                            <div className="product-preview__share-and-favorites">
+                                <img className="product-preview__share-image" src={assets.fi_heart} alt="Добавить в избранное" />
+                                <img className="product-preview__favorites-image" src={assets.share_alt_outlined} alt="Поделиться" />
+                            </div>
                         </div>
                     </div>
-                </article>
-                <aside className="product-card__right-side">
-                    <div className="product-meta">
-                        <span className="product-reviews">2 отзыва</span>
-                        <div className="product-icons">
-                            <img className="product-add-to-favorites" src={fi_heart} alt="Добавить в избранное"/>
-                            <img className="product-add-to-favorites" src={share_alt_outlined} alt="Поделиться"/>
-                        </div>
-                    </div>
-                </aside>
-            </section>
-            <Footer/>
+                </div>
+            </div>
         </>
     );
 };

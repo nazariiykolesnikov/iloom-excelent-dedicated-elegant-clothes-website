@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Main from "./pages/Main/Main.jsx";
 import AccountControl from "./pages/AccountControl/AccountControl.jsx";
@@ -11,18 +11,16 @@ import ProductPage from "./pages/ProductPage/ProductPage.jsx";
 const App = () => {
     return (
         <>
-            <Router>
-                <Routes>
-                    <Route path="/product-page" element={<ProductPage/>} />
-                    <Route path="/pop-up-product-preview" element={<PopUpProductPreview/>} />
-                    <Route path="/payment" element={<Payment/>} />
-                    <Route path="/favorite-products" element={<FavoriteProducts/>} />
-                    <Route path="/checkout" element={<Checkout/>} />
-                    <Route path="/account-control" element={<AccountControl />} />
-                    <Route path="/" element={<Main />} />
-                    <Route path="*" element={<Main />} />
-                </Routes>
-            </Router>
+            <Routes>
+                <Route path="/product-page" element={<ProductPage/>} />
+                <Route path="/pop-up-product-preview" element={<PopUpProductPreview/>} />
+                <Route path="/payment" element={<Payment/>} />
+                <Route path="/favorite-products" element={<FavoriteProducts/>} />
+                <Route path="/checkout" element={<Checkout/>} />
+                <Route path="/account-control" element={<AccountControl />} />
+                <Route path="/" element={<Main />} />
+                <Route path="*" element={<Main />} />
+            </Routes>
         </>
     )
 }

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.product-quantity {
+    width: 176px !important;
+    height: 48px;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 16px;
+    border-radius: 43px;
+    color: #FFFFFF;
+    line-height: 150%;
+    letter-spacing: 0;
+    background: transparent;
+}
+
+.product-quantity:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #FC8BD1;
+}
+
+.product-quantity span {
+    top: 13px;
+    left: 89px;
+    color: #000000;
+    font-weight: 800;
+}
+
+.product-quantity__button:first-child,
+.product-quantity__button:last-child,
+.product-quantity span {
+    position: absolute;
+}
+
+.product-quantity__button:first-child,
+.product-quantity__button:last-child {
+    top: 4px;
+    font-size: 26px;
+}
+
+.product-quantity__button:first-child {
+    left: 27px;
+}
+
+.product-quantity__button:last-child {
+    right: 27px;
+}
+
+.product-quantity__wrapper {
+    position: relative;
+    bottom: -100px;
+    right: 200px;
+}

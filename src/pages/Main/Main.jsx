@@ -1,9 +1,9 @@
-import ProductPage from "../ProductPage/ProductPage.jsx";
+import Cart from "../Cart/Cart.jsx";
 
 const Main = () => {
     return (
         <>
-            <ProductPage />
+           <Cart />
         </>
     );
 }

@@ -7,7 +7,7 @@ const oversize_hoodie_with_love_embroidery_01 = "https://i.ibb.co/39fYJ25c/overs
 const oversize_hoodie_with_$100_embroidery_01 = "https://i.ibb.co/pvkpsjcd/oversize-hoodie-with-100-embroidery-01.webp";
 const blue_hoodie_with_honk_embroidery_01 = "https://i.ibb.co/JwCr4bbQ/blue-hoodie-with-honk-embroidery-01.webp";
 const oversize_hoodie_with_working_around_the_clock_embroidery_01 = "https://i.ibb.co/cSsnQRK7/oversize-hoodie-with-working-around-the-clock-embroidery-01.webp";
-// const oversize_hoodie_with_beach_club_embroidery_01 = "https://i.ibb.co/hRtn9nQ1/oversize-hoodie-with-beach-club-embroidery-01.webp";
+const oversize_hoodie_with_beach_club_embroidery_01 = "https://i.ibb.co/hRtn9nQ1/oversize-hoodie-with-beach-club-embroidery-01.webp";
 
 /* Футболки */
 const tommys_sandwiches_t_shirt_01 = "https://i.ibb.co/1txQJQt7/tommys-sandwiches-t-shirt-01.webp";
@@ -26,7 +26,7 @@ const oversize_t_shirt_with_embroidery_did_you_forget_your_head_at_home_01 = "ht
 const sweatshirt_with_embroidery_the_creation_of_adam_01 = "https://i.ibb.co/WJzGLhh/embroidered-sweatshirt-rat-club-we-wont-judge-but-we-will-discuss-01.webp";
 const sweatshirt_with_stay_kind_embroidery_01 = "https://i.ibb.co/20MWcM0m/sweatshirt-with-embroidery-the-creation-of-adam-01.webp";
 
-export const products_mini_hoodies_part1 = [
+export const products_mini_hoodies_p1 = [
     {
        id: 1,
        title: 'Худи оверсайз с вышивкой "Карпы Кои""',
@@ -59,8 +59,8 @@ export const products_mini_hoodies_part1 = [
         reviews: 2,
         highlighted: false,
         image: oversize_blue_hoodie_with_non_brushed_piping_01,
-      },
-      {
+    },
+    {
         id: 4,
         title: 'Худи с вышивкой "Тревожный Клуб"',
         priceWithoutWBWalletAndWithoutDiscount: 10000,
@@ -70,12 +70,11 @@ export const products_mini_hoodies_part1 = [
         reviews: 1,
         highlighted: false,
         image: hoodie_with_anxiety_club_embroidery_01,
-      }
+    }
 ];
-
-export const products_mini_hoodies_part2 = [
+export const products_mini_hoodies_p2 = [
     {
-        id: 1,
+        id: 5,
         title: 'Худи оверсайз с вышивкой "100$"',
         priceWithoutWBWalletAndWithoutDiscount: 9328,
         priceWithoutWBWalletAndWithDiscount: 6184,
@@ -86,7 +85,7 @@ export const products_mini_hoodies_part2 = [
         image: oversize_hoodie_with_$100_embroidery_01,
     },
     {
-        id: 2,
+        id: 6,
         title: 'Худи синий с вышивкой "Honk"',
         priceWithoutWBWalletAndWithoutDiscount: 11000,
         priceWithoutWBWalletAndWithDiscount: 6811,
@@ -97,7 +96,7 @@ export const products_mini_hoodies_part2 = [
         image: blue_hoodie_with_honk_embroidery_01,
     },
     {
-        id: 3,
+        id: 7,
         title: 'Худи оверсайз с вышивкой "Работаю сутками"',
         priceWithoutWBWalletAndWithoutDiscount: 8800,
         priceWithoutWBWalletAndWithDiscount: 5321,
@@ -108,7 +107,7 @@ export const products_mini_hoodies_part2 = [
         image: oversize_hoodie_with_working_around_the_clock_embroidery_01,
     },
     {
-        id: 4,
+        id: 8,
         title: 'Худи оверсайз с вышивкой "Любовь"',
         priceWithoutWBWalletAndWithoutDiscount: 9000,
         priceWithoutWBWalletAndWithDiscount: 5169,
@@ -117,13 +116,24 @@ export const products_mini_hoodies_part2 = [
         reviews: 1,
         highlighted: false,
         image: oversize_hoodie_with_love_embroidery_01,
+    }
+];
+
+export const products_mini_hoodies_p3 = [
+    {
+        id: 9,
+        title: 'Худи оверсайз с вышивкой "Beach Club"',
+        priceWithoutWBWalletAndWithoutDiscount: 0,
+        priceWithoutWBWalletAndWithDiscount: 0,
+        priceWithWBWalletWithDiscount: 0,
+        rating: 0,
+        reviews: 0,
+        highlighted: false,
+        image: oversize_hoodie_with_beach_club_embroidery_01,
     },
 ];
 
-export const products_mini_hoodies_part3 = [
-];
-
-export const products_mini_t_shirts_part_1 = [
+export const products_mini_t_shirts_p1 = [
     {
         id: 1,
         title: 'Футболка с принтом "Tommys Sandwiches"',
@@ -167,12 +177,12 @@ export const products_mini_t_shirts_part_1 = [
         reviews: 4,
         highlighted: false,
         image: need_money_for_porsche_t_shirt_01,
-    },
+    }
 ];
 
-export const products_mini_t_shirts_part_2 = [
+export const products_mini_t_shirts_p2 = [
      {
-        id: 1,
+        id: 5,
         title: 'Футболка с вышивкой "Sniper Sniper Sniper"',
         priceWithoutWBWalletAndWithoutDiscount: 4700,
         priceWithoutWBWalletAndWithDiscount: 3494,
@@ -183,7 +193,7 @@ export const products_mini_t_shirts_part_2 = [
         image: t_shirt_with_sniper_sniper_sniper_embroidery_01,
     },
     {
-        id: 2,
+        id: 6,
         title: 'Футболка оверсайз с вышивкой сердца',
         priceWithoutWBWalletAndWithoutDiscount: 4700,
         priceWithoutWBWalletAndWithDiscount: 3494,
@@ -194,7 +204,7 @@ export const products_mini_t_shirts_part_2 = [
         image:  oversize_black_t_shirt_with_heart_embroidery_01,
     },
     {
-        id: 3,
+        id: 8,
         title: 'Футболка оверсайз с принтом "Не ной SYKA"',
         priceWithoutWBWalletAndWithoutDiscount: 5000,
         priceWithoutWBWalletAndWithDiscount: 3361,
@@ -203,9 +213,12 @@ export const products_mini_t_shirts_part_2 = [
         reviews: 2,
         highlighted: false,
         image: oversize_t_shirt_with_dont_whine_syka_print_01,
-    },
+    }
+];
+
+export const products_mini_t_shirts_p3 = [
     {
-        id: 4,
+        id: 9,
         title: 'Футболка с принтом "Bonjour"',
         priceWithoutWBWalletAndWithoutDiscount: 7800,
         priceWithoutWBWalletAndWithDiscount: 5480,
@@ -217,7 +230,7 @@ export const products_mini_t_shirts_part_2 = [
     }
 ];
 
-export const products_mini_t_shirts_part_3 = [
+export const products_mini_sweatshirts_p1 = [
     {
         id: 1,
         title: 'Футболка оверсайз с принтом "Не ной SYKA"',
@@ -251,11 +264,8 @@ export const products_mini_t_shirts_part_3 = [
         highlighted: false,
         image: oversize_t_shirt_with_embroidery_did_you_forget_your_head_at_home_01,
     },
-];
-
-export const products_mini_sweatshirts_part1 = [
     {
-        id: 1,
+        id: 4,
         title: "Свитшот с вышивкой - Крысиный клуб Не осудим но обсудим",
         priceWithoutWBWalletAndWithoutDiscount: 7040,
         priceWithoutWBWalletAndWithDiscount: 4141,
@@ -265,9 +275,12 @@ export const products_mini_sweatshirts_part1 = [
         highlighted: false,
         image: sweatshirt_with_stay_kind_embroidery_01,
 
-    },
+    }
+];
+
+export const products_mini_sweatshirts_p2 = [
     {
-        id: 2,
+        id: 5,
         title: 'Свитшот с вышивкой "Сотворение Адама"',
         priceWithoutWBWalletAndWithoutDiscount: 7500,
         priceWithoutWBWalletAndWithDiscount: 5409,
@@ -277,12 +290,4 @@ export const products_mini_sweatshirts_part1 = [
         highlighted: true,
         image: sweatshirt_with_embroidery_the_creation_of_adam_01,
     },
-];
-
-export const products_mini_sweatshirts_part2 = [
-    
-];
-
-export const products_mini_sweatshirts_part3 = [
-    
 ];

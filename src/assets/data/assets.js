@@ -21,6 +21,8 @@ import facebook from '../logo/Facebook/Facebook.svg';
 import youtube from '../logo/YouTube/YouTube.svg';
 import woman_shopping_bags_white from "../logo/WomanShoppingBagsWhite/woman_shopping_bags_white.svg"
 import instagram from '../logo/Instagram/Instagram.svg';
+import email_logo from '../logo/EmailLogo/email_logo.svg';
+import location_logo_bl from '../logo/LocationLogoBlack/location.svg';
 import arrow_down_black from "../logo/ArrowDownBlack/arrow-down-black.svg";
 import burger_menu_white from "../logo/BurgerMenuWhite/burger-menu__white.svg";
 import twitter from '../logo/Twitter/Twitter.svg';
@@ -28,6 +30,10 @@ import tiktok from '../logo/TikTok/TikTok.svg';
 import vkontakte_logo from "../logo/VkontakteLogo/vkontakte_logo.svg";
 import settings_logo from "../logo/SettingsLogo/settings_logo.svg";
 import favorite_heart_sidebar from "../logo/FavoriteHeartSidebar/favorite-heart.svg";
+import location_detection_logo_black from "../logo/LocationDetectionLogo/CurrentLocationBlack.svg";
+import location_detection_logo_white from "../logo/LocationDetectionLogo/CurrentLocationWhite.svg";
+import circle_logo_black from "../logo/LocationDetectionLogo/CircleBlack.svg";
+import circle_logo_white from "../logo/LocationDetectionLogo/CircleWhite.svg";
 import telegram from '../logo/Telegram/Telegram.svg';
 import pink_heart from '../logo/ProductHeart/fi_heart.svg';
 import notifications_logo from "../logo/NotificationsLogo/notifications_logo.svg";
@@ -36,6 +42,7 @@ import belcard from '../logo/Belcard/Belcard.svg';
 import visa from '../logo/Visa/Visa.svg';
 import profile_user_logo from "../logo/ProfileUserLogo/profile_user_logo.svg";
 import mir from '../logo/Mir/Mir.svg';
+import trash_logo from "../logo/TrashLogo/trash_logo.svg";
 import log_out_logo from "../logo/LogOutLogo/log_out_logo.svg";
 import mastercard from '../logo/MasterCard/MasterCard.svg';
 import google_icon from '../logo/Google/google.svg';
@@ -75,8 +82,14 @@ export const assets = {
     woman_shopping_bags,
     star,
     pink_heart,
+    email_logo,
+    location_logo_bl,
     messages_logo_sidebar,
     notifications_logo,
+    location_detection_logo_black,
+    location_detection_logo_white,
+    circle_logo_black,
+    circle_logo_white,
     shopping_cart,
     white_circle,
     delivery,
@@ -84,6 +97,7 @@ export const assets = {
     log_out_logo,
     favorite_heart_sidebar,
     turn_back,
+    trash_logo,
     facebook,
     youtube,
     instagram,

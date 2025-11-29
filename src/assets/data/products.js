@@ -7,7 +7,7 @@ const oversize_hoodie_with_love_embroidery_01 = "https://i.ibb.co/39fYJ25c/overs
 const oversize_hoodie_with_$100_embroidery_01 = "https://i.ibb.co/pvkpsjcd/oversize-hoodie-with-100-embroidery-01.webp";
 const blue_hoodie_with_honk_embroidery_01 = "https://i.ibb.co/JwCr4bbQ/blue-hoodie-with-honk-embroidery-01.webp";
 const oversize_hoodie_with_working_around_the_clock_embroidery_01 = "https://i.ibb.co/cSsnQRK7/oversize-hoodie-with-working-around-the-clock-embroidery-01.webp";
-// const oversize_hoodie_with_beach_club_embroidery_01 = "https://i.ibb.co/hRtn9nQ1/oversize-hoodie-with-beach-club-embroidery-01.webp";
+const oversize_hoodie_with_beach_club_embroidery_01 = "https://i.ibb.co/hRtn9nQ1/oversize-hoodie-with-beach-club-embroidery-01.webp";
 
 /* Футболки */
 const tommys_sandwiches_t_shirt_01 = "https://i.ibb.co/1txQJQt7/tommys-sandwiches-t-shirt-01.webp";
@@ -19,6 +19,8 @@ const t_shirt_with_sniper_sniper_sniper_embroidery_01 = "https://i.ibb.co/XRdSNd
 const oversize_black_t_shirt_with_heart_embroidery_01 = "https://i.ibb.co/ksM1y46C/Oversize-white-t-shirt-with-heart-embroidery-01.webp";
 const t_shirt_with_bonjour_print_01 = "https://i.ibb.co/G43GZkmD/t-shirt-with-bonjour-print-01.webp";
 const oversize_t_shirt_with_dont_whine_syka_print_01 = "https://i.ibb.co/1GYP2Bys/oversize-T-shirt-with-dont-whine-SYKA-print-01.webp";
+const t_shirt_with_rat_club_embroidery_01 = "https://i.ibb.co/603XFGQX/t-shirt-with-rat-club-embroidery-01.webp";
+const oversize_t_shirt_with_embroidery_did_you_forget_your_head_at_home_01 = "https://i.ibb.co/v6LDTqDG/oversize-t-shirt-with-embroidery-did-you-forget-your-head-at-home-01.webp";
 
 /* Свитшоти */
 const sweatshirt_with_embroidery_the_creation_of_adam_01 = "https://i.ibb.co/WJzGLhh/embroidered-sweatshirt-rat-club-we-wont-judge-but-we-will-discuss-01.webp";
@@ -34,6 +36,7 @@ export const products = [
     rating: 5,
     reviews: 2,
     highlighted: true,
+    salesValue: "-58%",
     image: oversize_skinny_with_carp_koi_embroidery_01,
   },
   {
@@ -45,6 +48,7 @@ export const products = [
     rating: 5,
     reviews: 3,
     highlighted: false,
+    salesValue: "-37%",
     image: oversize_hoodie_with_no_money_no_funny_embroidery_01,
   },
   {
@@ -56,6 +60,7 @@ export const products = [
     rating: 5,
     reviews: 2,
     highlighted: false,
+    salesValue: "-41%",
     image: tommys_sandwiches_t_shirt_01,
   },
   {
@@ -67,6 +72,7 @@ export const products = [
     rating: 5,
     reviews: 4,
     highlighted: false,
+    salesValue: "-28%",
     image: oversize_t_shirt_anxiety_club_01,
   },
   {
@@ -78,6 +84,7 @@ export const products = [
     rating: 5,
     reviews: 2,
     highlighted: false,
+    salesValue: "-23%",
     image: oversize_blue_hoodie_with_non_brushed_piping_01,
   },
   {
@@ -89,6 +96,7 @@ export const products = [
     rating: 5,
     reviews: 1,
     highlighted: false,
+    salesValue: "-36%",
     image: hoodie_with_anxiety_club_embroidery_01,
   },
   {
@@ -100,6 +108,7 @@ export const products = [
     rating: 5,
     reviews: 5,
     highlighted: false,
+    salesValue: "-45%",
     image: oversize_hoodie_with_$100_embroidery_01,
   },
   {
@@ -111,6 +120,7 @@ export const products = [
     rating: 5,
     reviews: 6,
     highlighted: false,
+    salesValue: "-31%",
     image: blue_hoodie_with_honk_embroidery_01,
   },
   {
@@ -122,6 +132,7 @@ export const products = [
     rating: 5,
     reviews: 3,
     highlighted: true,
+    salesValue: "-47%",
     image: sweatshirt_with_embroidery_the_creation_of_adam_01,
   },
   {
@@ -133,6 +144,7 @@ export const products = [
     rating: 5,
     reviews: 1,
     highlighted: false,
+    salesValue: "-39%",
     image: t_shirt_with_sigma_embroidery_01,
   },
   {
@@ -144,6 +156,7 @@ export const products = [
     rating: 5,
     reviews: 2,
     highlighted: false,
+    salesValue: "-20%",
     image: oversize_hoodie_with_working_around_the_clock_embroidery_01,
   },
   {
@@ -155,6 +168,7 @@ export const products = [
     rating: 5,
     reviews: 4,
     highlighted: false,
+    salesValue: "-35%",
     image: need_money_for_porsche_t_shirt_01,
   },
   {
@@ -166,6 +180,7 @@ export const products = [
     rating: 5,
     reviews: 1,
     highlighted: false,
+    salesValue: "-14%",
     image: sweatshirt_with_stay_kind_embroidery_01,
   },
   {
@@ -177,6 +192,7 @@ export const products = [
     rating: 5,
     reviews: 1,
     highlighted: false,
+    salesValue: "-29%",
     image: oversize_hoodie_with_love_embroidery_01,
   },
   {
@@ -188,6 +204,7 @@ export const products = [
     rating: 5,
     reviews: 3,
     highlighted: false,
+    salesValue: "-34%",
     image: t_shirt_with_sniper_sniper_sniper_embroidery_01,
   },
   {
@@ -199,6 +216,7 @@ export const products = [
     rating: 5,
     reviews: 4,
     highlighted: true,
+    salesValue: "-19%",
     image:  oversize_black_t_shirt_with_heart_embroidery_01,
   },
   {
@@ -210,6 +228,7 @@ export const products = [
     rating: 5,
     reviews: 2,
     highlighted: false,
+    salesValue: "-16%",
     image: oversize_t_shirt_with_dont_whine_syka_print_01,
   },
   {
@@ -221,6 +240,7 @@ export const products = [
     rating: 5,
     reviews: 3,
     highlighted: false,
+    salesValue: "-38%",
     image: t_shirt_with_bonjour_print_01,
   },
   {
@@ -232,6 +252,43 @@ export const products = [
     rating: 5,
     reviews: 5,
     highlighted: false,
+    salesValue: "-26%",
     image: t_shirt_with_wifey_wifey_wifey_embroidery_01,
+  },
+  {
+    id: 120,
+    title: 'Худи оверсайз с вышивкой "Beach Club"',
+    priceWithoutWBWalletAndWithoutDiscount: 0,
+    priceWithoutWBWalletAndWithDiscount: 0,
+    priceWithWBWalletWithDiscount: 0,
+    rating: 0,
+    reviews: 0,
+    highlighted: false,
+    salesValue: "-43%",
+    image: oversize_hoodie_with_beach_club_embroidery_01,
+  },
+  {
+    id: 121,
+    title: 'Футболка с вышивкой "Крысиный Клуб"',
+    priceWithoutWBWalletAndWithoutDiscount: 4785,
+    priceWithoutWBWalletAndWithDiscount: 2911,
+    priceWithWBWalletWithDiscount: 2852,
+    rating: 5,
+    reviews: 5,
+    highlighted: false,
+    salesValue: "-25%",
+    image: t_shirt_with_rat_club_embroidery_01,
+  },
+  {
+    id: 122,
+    title: 'Футболка оверсайз с вышивкой "А голову ты дома не забыл?"',
+    priceWithoutWBWalletAndWithoutDiscount: 4700,
+    priceWithoutWBWalletAndWithDiscount: 3159,
+    priceWithWBWalletWithDiscount: 3095,
+    rating: 5,
+    reviews: 5,
+    highlighted: false,
+    salesValue: "-27%",
+    image: oversize_t_shirt_with_embroidery_did_you_forget_your_head_at_home_01,
   },
 ];

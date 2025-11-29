@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.product-card-addition__button {
+    width: 298px;
+    height: 48px;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 16px;
+    border-radius: 43px;
+    color: #FFFFFF;
+    line-height: 150%;
+    letter-spacing: 0;
+    background: #FC8BD1;
+}
+
+.product-card-addition__button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #FC8BD1;
+}
+
+.product-card-addition__button:hover {
+    cursor: pointer;
+}
+
+.product-card-addition__button-image {
+    position: absolute;
+    top: 14px;
+    left: 90px;
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+
+.product-card-addition__button:hover {
+    opacity: 0.75;
+    border: none;
+}

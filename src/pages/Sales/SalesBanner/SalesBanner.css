@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.fewer-words-more-embroidery {
+    font-size: 100px;
+    max-width: 2000px;
+    font-weight: 400;
+    padding-top: 170px;
+}
+
+.everything-else-is-excuses {
+    margin-top: -30px;
+    margin-left: 7px;
+    max-width: 2000px;
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.banner-slogans__container {
+    font-family: "Montserrat", sans-serif;
+    width: 808px;
+    height: 700px;
+    font-size: 100px;
+    color: #212429;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-top: -206px;
+    margin-left: 37px;
+}
+
+@media (max-width: 1024px) {
+    .banner-title {
+        font-size: 72px;
+        padding-top: 8rem;
+    }
+
+    .banner-subtitle {
+        font-size: 20px;
+        margin-top: -2rem;
+    }
+
+    .banner-content {
+        margin-top: 12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-content {
+        margin-top: 8rem;
+    }
+
+    .fewer-words-more-embroidery {
+        font-size: 48px;
+        padding-top: 5rem;
+        margin-left: -1rem;
+        max-width: 200%;
+        line-height: 125% !important;
+    }
+
+    .everything-else-is-excuses {
+        font-size: 24px;
+        margin-top: -6.5rem;
+        margin-left: -0.9rem;
+        max-width: 200%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 719px) {
+    .fewer-words-more-embroidery {
+        font-size: 70px;
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .everything-else-is-excuses {
+        font-size: 40px;
+        padding-bottom: 60px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .fewer-words-more-embroidery {
+        font-size: 56px;
+        margin-left: -1rem;
+        width: 100%;
+        padding-top: 90px;
+        padding-bottom: 30px;
+    }
+
+    .everything-else-is-excuses {
+        font-size: 40px;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .banner-content {
+        margin-top: 6rem;
+    }
+}

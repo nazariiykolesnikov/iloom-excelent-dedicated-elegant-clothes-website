@@ -1,4 +1,4 @@
-export const full_products_info = [
+export const mainPageFullProductsInfo = [
     {
         id: 1,
         images: [

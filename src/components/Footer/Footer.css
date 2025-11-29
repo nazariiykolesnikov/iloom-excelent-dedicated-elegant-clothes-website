@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: -40px;
+    margin-right: 42px;
 }
 
 .footer-column {
@@ -186,7 +187,7 @@ a:hover {
 }
 
 .footer-socials-networks {
-    margin-right: 104px;
+    margin-right: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
